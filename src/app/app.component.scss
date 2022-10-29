@@ -1,0 +1,158 @@
+.miEstilo {
+  background-color: #fff;
+}
+
+.correrElementos {
+  margin-left: auto;
+}
+
+.Fondo {
+  background-image: url(../assets/fondo.jpg);
+}
+
+.Mifoto {
+  margin-top: 2%;
+  border-radius: 50%;
+  width: 184px;
+}
+
+.misBotones button {
+  margin: 1%;
+  margin-top: 2%;
+}
+
+#Nombre {
+  margin-top: 1%;
+}
+
+.miTarjeta {
+  background-color: transparent;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 80%;
+
+  margin: auto;
+}
+
+#Exp {
+  margin-top: 2%;
+}
+
+.Experiencia {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 80%;
+
+  margin: auto;
+
+  background-color: transparent;
+}
+
+.segundaTabla {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 80%;
+
+  margin: auto;
+
+  background-color: transparent;
+
+  margin-top: 3%;
+}
+
+#letraContact {
+
+  margin-top: 3%;
+
+
+
+
+}
+
+
+
+.Contact {
+
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 80%;
+
+  margin: auto;
+
+  background-color: transparent;
+
+  margin-top: 1%;
+
+
+}
+
+.input-group {
+
+  position: relative;
+
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  color: #fff;
+  background-color: transparent;
+  outline: 2px solid #fff;
+
+
+
+}
+
+.input-label {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transition: transform .25s;
+
+
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label {
+  transform: translate(10px, -14px) scale(.8);
+  color: #d1c5fc;
+  padding-inline: 5px;
+  background-color: #242329;
+}
+
+.input:is(:focus, :valid) {
+
+  outline-color: #d1c5fc;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
