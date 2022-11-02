@@ -38,6 +38,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {Component, ElementRef, ViewChild} from '@angular/core';
+
+
 
 
 

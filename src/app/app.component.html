@@ -213,79 +213,52 @@
       </mat-card>
     </div>
   </div>
-  <div  class="container-fluid">
+  <div class="container fluid">
     <div class="row">
-      <div class="col-md-12 text-center fs-4 fw-bolder" id="letraContact">
+      <div class="col-md-12 text-center fs-4 fw-bold" id="Contact">
 
-        Contacto
+        CONTACTO
 
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <mat-card class="Contact">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="input-group">
 
-            <input type="text" id="name" required class="input">
-            <label for="name" class="input-label">Email address</label>
+  <div class="container-fluid text-center">
+    <form  [formGroup]="formularioDeContacto" (ngSubmit)="alEnviarMensaje()">
+      <mat-card class="contactMe">
 
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <mat-form-field appearance="fill">
+              <mat-label>Nombre</mat-label>
+              <input matInput type="text" formControlName="nombre">
+            </mat-form-field>
+            <div *ngIf="formularioDeContacto.controls.nombre.errors" class="text-danger">
+              <div *ngIf="formularioDeContacto.controls.nombre.errors.required">Se necesita un Nombre.</div>
+            </div>
           </div>
-
-
-
         </div>
-      </div>
-
-
-
-    </mat-card>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <mat-form-field appearance="fill">
+              <mat-label>Mensaje</mat-label>
+              <input matInput type="text" formControlName="mensaje">
+            </mat-form-field>
+            <div *ngIf="formularioDeContacto.controls.mensaje.errors" class="text-danger">
+              <div *ngIf="formularioDeContacto.controls.mensaje.errors.required">Mensaje es necesario.</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button mat-raised-button type="submit" color="warn">Enviar Mensaje</button>
+          </div>
+        </div>
+      </mat-card>
+    </form>
   </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 text-center">
-
-        <h1>CONTACTO</h1>
-
-        <section class="contact-wrap">
-          <form action="" class="contact-form">
-            <div class="col-md-6">
-              <div class="input-block">
-                <label for="">First Name</label>
-                <input type="text" class="form-control">
-
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="input-block">
-                <label for="">Last Name</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-12">
-              <div class="input-block">
-                <label  for="">Message Subject</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="input-block textarea">
-                <label for="">Drop your message here</label>
-                <textarea rows="3" type="text" class="form-control"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <button class="square-button">Send</button>
-            </div>
-
-          </form>
-
-
-        </section>
 
 
 
@@ -298,9 +271,11 @@
 
 
 
-      </div>
-    </div>
-  </div>
+
+
+
+
+
 
 
 
@@ -311,3 +286,4 @@
 
   <router-outlet></router-outlet>
 </div>
+

@@ -61,85 +61,32 @@
   margin-top: 3%;
 }
 
-#letraContact {
-
+.TablaContact{
+  background-color: transparent;
   margin-top: 3%;
-
-
-
-
-}
-
-
-
-.Contact {
-
-
+  margin: auto;
+  width: 80%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  width: 80%;
 
-  margin: auto;
 
-  background-color: transparent;
+}
 
+#Contact{
   margin-top: 1%;
-
-
 }
 
-.input-group {
-
-  position: relative;
-
-}
-
-.input {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  font: inherit;
-  color: #fff;
+.contactMe {
   background-color: transparent;
-  outline: 2px solid #fff;
-
-
-
-}
-
-.input-label {
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(10px, 10px);
-  transition: transform .25s;
-
-
-}
-
-.input:focus+.input-label,
-.input:valid+.input-label {
-  transform: translate(10px, -14px) scale(.8);
-  color: #d1c5fc;
-  padding-inline: 5px;
-  background-color: #242329;
-}
-
-.input:is(:focus, :valid) {
-
-  outline-color: #d1c5fc;
+  margin-top: 4%;
+  margin: auto;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
 
 
 }
-
-
-
-
-
-
 
 
 
